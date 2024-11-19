@@ -1,0 +1,133 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F2F4F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Request Info Page Layout */
+.request-info-page {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Back Arrow Styling */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-arrow a {
+    color: #007ACC;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-arrow a:hover {
+    color: #005fa3;
+}
+
+/* Form Container */
+.request-info-form-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.request-info-form-container h2 {
+    color: #1a3b5d;
+    margin-bottom: 20px;
+}
+
+.request-info-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Input Fields */
+.form-label {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: red;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.request-info-form-container input,
+.request-info-form-container select,
+.request-info-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-row input {
+    width: 100%;
+}
+
+/* Consent Section */
+.consent-section {
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+}
+
+.consent-section label {
+    font-weight: bold;
+}
+
+.consent-text {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007ACC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #005fa3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}

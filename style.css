@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    background-color: #E9F1FA; /* Light blue background */
+    color: #222;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    color: #222; /* Dark text for logo */
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px; /* Increased spacing */
+}
+
+header nav ul li a {
+    color: #222; /* Dark text for navigation */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px; /* Padding for better click area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+header nav ul li a:hover {
+    /* background-color: #00ABE4; Bright blue background on hover */
+    color: #FFFFFF; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section .login,
+.right-section .quote-btn {
+    margin-left: 20px;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    z-index: 1; /* Ensure content is on top */
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.quote-btn {
+    padding: 15px 30px;
+    background-color:#007bff; /* Bright blue background */
+    color: #FFFFFF; /* White text */
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.quote-btn:hover {
+    background-color: #007bff; /* Slightly darker blue on hover */
+}
+
+/* Other Sections */
+.cta {
+    text-align: center;
+    background-color: #E9F1FA; /* Light blue background */
+    padding: 50px 20px;
+}
+
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    width: 200px;
+    margin: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Dark footer background */
+    color: #FFFFFF; /* White text */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space -between;
+    padding-bottom: 30px;
+}
+
+.footer-top .contact,
+.footer-top .phone,
+.footer-top .social {
+    flex: 1;
+}
+
+.footer-bottom {
+    background-color: #007bff; /* Darker footer bottom */
+    padding: 20px 0;
+}
+
+.footer-bottom .links a {
+    color: #FFFFFF; /* White text for footer links */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-bottom p {
+    margin-top: 20px;
+    font-size: 14px;
+} 
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    background-color: #E9F1FA; /* Light blue background */
+    color: #222;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    color: #222; /* Dark text for logo */
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px; /* Increased spacing */
+}
+
+header nav ul li a {
+    color: #222; /* Dark text for navigation */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px; /* Padding for better click area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+header nav ul li a:hover {
+    background-color: #007bff; /* Bright blue background on hover */
+    color: #FFFFFF; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section .login,
+.right-section .quote-btn {
+    margin-left: 20px;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    z-index: 1; /* Ensure content is on top */
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.quote-btn {
+    padding: 15px 30px;
+    background-color: #007bff; /* Bright blue background */
+    color: #FFFFFF; /* White text */
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.quote-btn:hover {
+    background-color: #007bff /* Slightly darker blue on hover */
+}
+
+/* Other Sections */
+.cta {
+    text-align: center;
+    background-color: #E9F1FA; /* Light blue background */
+    padding: 50px 20px;
+}
+
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    width: 200px;
+    margin: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Dark footer background */
+    color: #FFFFFF; /* White text */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footer-top .contact,
+.footer-top .phone,
+.footer-top .social {
+    flex: 1;
+}
+
+.footer-bottom {
+    background-color: #222; /* Darker footer bottom */
+    padding: 20px 0;
+}
+
+.footer-bottom .links a {
+    color: #FFFFFF; /* White text for footer links */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-bottom p {
+    margin-top: 20px;
+    font-size : 14px;
+}
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 20rem; /* Increased width of the input box */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #007bff; /* Bright blue for the search button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #007bff; /* Darker blue on hover */
+}
+@media (max-width: 768px) {
+    .search-bar input[type="text"] {
+        width: 100%; /* Makes the input box take up the full width on smaller screens */
+    }
+}
+
+/* Navigation Logo Styling */
+/* Navigation Logo Styling */
+header .logo img {
+    max-width: 150px; /* Limit the width of the logo */
+    height: 100px; /* Set the height for the logo container */
+    object-fit: cover; /* Ensure the image covers the container area without distortion */
+    object-position: top center; /* Crop the top of the image */
+    display: block; /* Remove any extra space below the image */
+}
+
+.button-link {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect */
+.button-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Footer styling */
+.footer {
+    background-color: #007BFF; /* Teal color */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-top .contact,
+.footer-top .phone,
+.footer-top .social {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-top .contact p {
+    font-weight: bold;
+}
+
+.contact-button {
+    background-color: #1669c2; /* Darker teal */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.footer-top .phone p {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.footer-top .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-top .social-icon {
+    font-size: 1.2em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    background-color: #007BFF; /* Darker teal */
+    font-size: 0.9em;
+}
+
+.footer-bottom .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 8px;
+    top: 100%; /* Position below the Products link */
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {
+    background-color: #a3a2a2;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.category-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px;
+}
+
+.category-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 20px 20px;
+} 

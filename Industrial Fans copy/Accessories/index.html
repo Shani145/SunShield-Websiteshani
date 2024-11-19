@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    /* Navigation Bar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .navbar .logo span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff9800;
+    }
+    .navbar-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-links li {
+      margin: 0 15px;
+    }
+    .navbar-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    .navbar-links a:hover {
+      color: #ff9800;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      padding: 5px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+    }
+    .search-bar button {
+      padding: 6px 10px;
+      margin-left: 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #0056b3;
+    }
+    .action-buttons {
+      display: flex;
+      align-items: center;
+    }
+    .action-buttons button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .action-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #00796b;
+      color: white;
+    }
+    .header h1 {
+      margin: 0;
+    }
+
+    /* Product Grid Styling */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card .content {
+      padding: 15px;
+    }
+    .product-card .content h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .product-card .content p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Footer Styling */
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #00796b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="/Sun Shield Best Transparent Logo.png" alt="Logo">
+      
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#news">News & Resources</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button>Search</button>
+    </div>
+    <div class="action-buttons">
+      <button>Account Login</button>
+      <button>Request A Quote</button>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Accessories</h1>
+    <p>Explore our wide range of products.</p>
+  </div>
+
+  <!-- Product Grid Section -->
+  <div class="product-grid">
+     <div class="product-card">
+     <a href="/Industrial Fans/Accessories/IWS Exhaust Shutters Photos/Index.html"> <img src="IWS Exhaust Shutters Photos/IWS Exhaust Shutters.png" alt="Product 1"></a>
+      <div class="content">
+        <h3>IWS Exhaust Shutters</h3>
+        <p>A brief description of Product 1.</p>
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <a href="Rain Hoods Photos/Index.html"><img src="Rain Hoods Photos/Rain Hoods.jpg" alt="Product 2"></a>
+      <div class="content">
+        <h3>Rain Hoods</h3>
+        <p>A brief description of Product 2.</p>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="RIWS Supply Shutters Photos/RIWS Supply Shutters.jpg" alt="Product 3">
+      <div class="content">
+        <h3>Riws Supply Shuters</h3>
+        <p>A brief description of Product 3.</p>
+      </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="Series 3100 Dampers Photos/Series 3100 Dampers .png" alt="Product 4">
+      <div class="content">
+        <h3>Series 3100</h3>
+        <p>A brief description of Product 4.</p>
+      </div>
+    </div>
+    <!-- Product 5 -->
+    <div class="product-card">
+      <img src="Series 3200 Dampers Photos/Series 3200 Dampers .png" alt="Product 5">
+      <div class="content">
+        <h3>Product 5</h3>
+        <p>A brief description of Product 5.</p>
+      </div>
+    </div>
+    <!-- Product 6 -->
+    <div class="product-card">
+      <img src="Series 3500 Dampers Photos/Series 3500 Dampers.png" alt="Product 6">
+      <div class="content">
+        <h3>Product 6</h3>
+        <p>A brief description of Product 6.</p>
+      </div>
+    </div>
+    <!-- Product 7 -->
+    <div class="product-card">
+      <img src="Thermostat Photos/Thermostat.png" alt="Product 7">
+      <div class="content">
+        <h3>Product 7</h3>
+        <p>A brief description of Product 7.</p>
+      </div>
+    </div>
+    <!-- Product 8 -->
+    <div class="product-card">
+      <img src="V Guard Photos/V Guard.png" alt="Product 8">
+      <div class="content">
+        <h3>Product 8</h3>
+        <p>A brief description of Product 8.</p>
+      </div>
+    </div>
+    <!-- Product 9 -->
+    <div class="product-card">
+      <img src="VI Guard Photos/VI Guard.png" alt="Product 9">
+      <div class="content">
+        <h3>Product 9</h3>
+        <p>A brief description of Product 9.</p>
+      </div>
+    </div>
+    <!-- Product 10 -->
+    <div class="product-card">
+      <img src="Series 3500 Dampers Photos/Series 3500 Dampers.png" alt="Product 10">
+      <div class="content">
+        <h3>Product 10</h3>
+        <p>A brief description of Product 10.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

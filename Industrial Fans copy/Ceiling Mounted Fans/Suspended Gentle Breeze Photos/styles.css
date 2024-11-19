@@ -1,0 +1,360 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #E9F1FA; /* Light blue background */
+    color: #222; /* Default text color */
+}
+
+/* Products Section */
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    width: 200px;
+    margin: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-top .contact,
+.footer-top .phone,
+.footer-top .social {
+    text-align: center;
+}
+
+.footer-top .contact p,
+.footer-top .phone p {
+    font-weight: bold;
+}
+
+.footer-bottom {
+    background-color: #007bff; /* Bright blue footer */
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+.footer-bottom .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 20rem;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.image-gallery #main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.thumbnail:hover {
+    border: 2px solid #2874F0;
+    transform: scale(1.1);
+}
+
+/* Product Details */
+.product-details {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.product-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.brand, .rating, .price {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.price {
+    color: #2874F0;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.discount {
+    color: #388E3C;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.features h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.quantity {
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* Button */
+button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #E64A19;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    /* Mobile Menu Adjustments */
+    header nav ul {
+        flex-direction: column; /* Stack items vertically */
+        background-color: #ffffff;
+        width: 100%;
+        position: fixed;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        display: none; /* Initially hidden */
+        z-index: 1000;
+    }
+
+    header nav ul.active {
+        display: flex; /* Show the mobile menu */
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Space between items */
+    }
+}
+
+/* Navigation Bar */
+header {
+    position: fixed; /* Fixes the navbar at the top of the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+    z-index: 1000; /* Keeps navbar above other elements */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Padding inside navbar */
+}
+
+header .logo h1 {
+    color: #222; /* Dark text for logo */
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation links */
+}
+
+header nav ul li {
+    position: relative; /* For dropdown handling */
+}
+
+header nav ul li a {
+    color: #333; /* Dark navigation text */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transitions */
+}
+
+header nav ul li a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Dropdown shadow */
+    min-width: 150px;
+    top: 100%; /* Below the main menu */
+    left: 0;
+    z-index: 1001; /* Dropdown appears above content */
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #f0f0f0; /* Subtle border between items */
+}
+
+.dropdown-content a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+nav ul li:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Space for Main Content */
+main {
+    margin-top: 80px; /* Adjust based on the height of your navbar */
+}
+
+/* Button Link */
+.button-link {
+    display: inline-block;
+    gap: 3;
+    margin: 3px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect */
+.button-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

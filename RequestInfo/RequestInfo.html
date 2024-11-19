@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Info</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="request-info-page">
+        <!-- Back Arrow -->
+        <div class="back-arrow">
+            <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        
+        <!-- Form Section -->
+        <div class="request-info-form-container">
+            <h2>Request Info</h2>
+            <form action="#">
+                <!-- I have a question about section -->
+                <label for="question" class="form-label">I have a question about... <span class="required">(Required)</span></label>
+                <select id="question" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                
+                <!-- Name Section -->
+                <div class="form-row">
+           #4c8caf  <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                
+                <!-- Company, Email, and Phone -->
+                <input type="text" placeholder="Company (Required)" required>
+                <input type="email" placeholder="Email (Required)" required>
+                <input type="tel" placeholder="Phone (Required)">
+                
+                <!-- Address Section -->
+                <input type="text" placeholder="Street Address">
+                <div class="form-row">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State / Province / Region">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Country" value="United States">
+                    <input type="text" placeholder="ZIP (Required)" required>
+                </div>
+                
+                <!-- Message Section -->
+                <textarea placeholder="Message" rows="4"></textarea>
+                
+                <!-- Consent Section -->
+                <div class="consent-section">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">I consent to the below:</label>
+                    <p class="consent-text">
+                        By checking the “CONSENT” box above, I consent to (1) provide the information in this form (“Information”) to sunShield Corporation (“sunShield”) to respond to my request and/or question, and (2) sunShield sharing such Information with its affiliates — Menasha Corporation, sunShield RPM, LLC, sunShield Canada Limited, sunShield Empaques de Mexico S.A. de C.V., sunShield Plastic Molding de Mexico, S. de R.L. de C.V., Servicio de Plastico Reutilizado, S. de R.L. de C.V., sunShield GmbH, sunShield NV, and Steelpac de Mexico S.A. de C.V. (collectively, "Affiliates") — for the same purposes. I understand that if the nature of my request or question is related to goods or services of sunShield or its Affiliates, sunShield and/or its Affiliates may directly market to me, including via email, mail, and telephone. I further understand that by consenting, my Information will be transferred to the United States, which may not require the same level of protection of data as required in the country where I live (if different than the United States) and which the European Union has not determined provides adequate safeguards for personal data.
+                    </p>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

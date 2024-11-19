@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      /* background-color: #cac9c7 */
+      color: rgb(2, 1, 1);
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card .content {
+      padding: 15px;
+    }
+    .product-card .content h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .product-card .content p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 14px;
+    }
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #00796b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+         
+    <div style="background-color: rgb(247, 112, 16); color: white;  padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-size: 14px;">
+            <span>Email: <a href="mailto:info@sunshield.com" style="color: white; text-decoration: underline;">info@sunshield.com</a></span>
+        </div>
+        <div style="font-size: 14px;">
+            <span>Phone: <a href="tel:8008998979" style="color: white; text-decoration: underline;">800-899-8979</a></span>
+        </div>
+    </div>
+        <div class="container" style="background-color: rgb(255, 255, 255);">
+            <div class="logo">
+                <a href="Index.html">
+                    <img src="/Sun Shield Best Transparent Logo.png" alt="SunShield Best Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="Industrial Fans/index.html">Products</a>
+                        <div class="dropdown-content">
+                            <a href="/Plastic Product/Platic.html">Plastic Products</a>
+                            <a href="#">Virgin Resin</a>
+                            <a href="Recycled Resin/index.html">Recycled Resin</a>
+                            <a href="OMSoil/Index.html">OM Soil Amendment</a>
+                            <a href="Industrial Fans/Accessories/IWS Exhaust Shutters Photos/Index.html">Industrial Fans</a>
+                            <a href="#">Contract Manufacturing</a>
+                            <a href="#">Logistics & Transportation</a>
+                            <a href="#">Consulting</a>
+                            <a href="Fitness/index.html">Fitness Equipment</a>
+                            <a href="#">Waste & Recycling Containers</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">News & Resources</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+
+            <div class="right-section">
+                <a href="Accountlogin.html" class="button-link">Account Login</a>
+                <a href="RequestQuota/requestquota.html" class="button-link">Request A Quote</a>
+            </div>
+        </div>
+    </header>
+
+  <div class="header" style="margin: 200px;">
+    <h1>Product Showcase</h1>
+    <p></p>
+  </div>
+
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <a href="Accessories/index.html"><img src="Accessories/IWS Exhaust Shutters Photos/IWS Exhaust Shutters.png" alt="Product 1"></a>
+      <div class="content">
+        <h3>Accessories</h3>
+        <p>A brief description of Product 1.</p>
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <a href="/Industrial Fans/Agricultural Fans/PFG Series Agricultural Fans/index.html"><img src="Agricultural Fans/PFG Series Agricultural Fans/PFG Series Agricultural Fans 2.png" alt="Product 2"></a>
+      <div class="content">
+        <h3>Agricultural Fans</h3>
+        <p>A brief description of Product 2.</p>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <a href="/OMSoil/Index.html"><img src="https://via.placeholder.com/300" alt="Product 3"></a>
+      <div class="content">
+        <h3>OM Soil </h3>
+        <p>A brief description of Product 3.</p>
+      </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="product-card">
+      <a href="/Plastic Product/Platic.html"><img src="/Sun Shield Documents/Product Categories/Plastic Products/Plastic Pallets/DUS1 Photos/DUS1 2.jpg" alt="Product 4">
+        <div class="content"></a>
+        <h3>Plastic Product</h3>
+        <p>A brief description of Product 4.</p>
+      </div>
+    </div>
+    <!-- Product 5 -->
+    <div class="product-card">
+      <a href="/Recyled Resin/index.html"><img src="https://via.placeholder.com/300" alt="Product 5"></a>
+      <div class="content">
+        <h3>Resin </h3>
+        <p>A brief description of Product 5.</p>
+      </div>
+    </div>
+    <!-- Product 6 -->
+    <div class="product-card">
+     <a href="/Fitness/index.html"> <img src="/Fitness/Fitness Equipment/Fitness Equipment/Treadmills/CT900 Treadmill/SPIRIT FITNESS CT900 TREADMILL 2.jpg" alt="Product 6"></a>
+      <div class="content">
+        <h3>Fitness</h3>
+        <p>A brief description of Product 6.</p>
+      </div>
+    </div>
+    <!-- Product 7 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product 7">
+      <div class="content">
+        <h3>Product 7</h3>
+        <p>A brief description of Product 7.</p>
+      </div>
+    </div>
+    <!-- Product 8 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product 8">
+      <div class="content">
+        <h3>Product 8</h3>
+        <p>A brief description of Product 8.</p>
+      </div>
+    </div>
+    <!-- Product 9 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product 9">
+      <div class="content">
+        <h3>Product 9</h3>
+        <p>A brief description of Product 9.</p>
+      </div>
+    </div>
+    <!-- Product 10 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product 10">
+      <div class="content">
+        <h3>Product 10</h3>
+        <p>A brief description of Product 10.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

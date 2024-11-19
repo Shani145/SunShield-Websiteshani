@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Panel Shutters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d80;
+            color: white;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .product-overview {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            flex: 1;
+        }
+        .product-image img {
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+        .product-details {
+            flex: 2;
+        }
+        .product-details h2 {
+            color: #004d80;
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        .features-list li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .features-list li::before {
+            content: "•";
+            color: #004d80;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #004d80;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .notes {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 20px;
+        }
+        .download-btn {
+            color: white;
+            text-decoration: none;
+            background-color: #053088;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .download-btn:hover {
+            background-color: #0b2dd8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Single Panel Shutters</h1>
+</header>
+
+<div class="container">
+    <div class="product-overview">
+        <div class="product-image">
+            <img src="IWS Exhaust Shutters.png" alt="Single Panel Shutters">
+        </div>
+        <div class="product-details">
+            <h2>Key Features</h2>
+            <ul class="features-list">
+                <li>Welded galvanized steel frame</li>
+                <li>Bronze pivot bushings</li>
+                <li>Extruded aluminum blades</li>
+                <li>Bronze finish, polyester powder-coated frame</li>
+                <li>Wall mount and fan mount models</li>
+            </ul>
+        </div>
+    </div>
+    <p>For more information, <a href="#" class="download-btn">Download Full PDF</a></p>
+    
+    <h2>Wall Mounted Models</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fan Size</th>
+                <th>Outside Dimension</th>
+                <th>Inside Dimension</th>
+                <th>Depth</th>
+                <th>Weight</th>
+                <th>Max HP</th>
+                <th>Exhaust Model</th>
+                <th>Supply Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>---</td>
+                <td>27 3/8" x 27 3/8"</td>
+                <td>24" x 24"</td>
+                <td>4"</td>
+                <td>22</td>
+                <td>0.75</td>
+                <td>IWS18</td>
+                <td>RIWS18</td>
+            </tr>
+            <tr>
+                <td>24"</td>
+                <td>33 3/8" x 33 3/8"</td>
+                <td>31" x 31"</td>
+                <td>4"</td>
+                <td>26</td>
+                <td>0.75</td>
+                <td>IWS24</td>
+                <td>RIWS24</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <h2>Fan Housing Mounted Models</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fan Size</th>
+                <th>Outside Dimension</th>
+                <th>Inside Dimension</th>
+                <th>Depth</th>
+                <th>Weight</th>
+                <th>Max HP</th>
+                <th>Exhaust Model</th>
+                <th>Supply Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>24"</td>
+                <td>30 3/8" x 30 3/8"</td>
+                <td>28" x 28"</td>
+                <td>4"</td>
+                <td>24</td>
+                <td>0.75</td>
+                <td>IWS21</td>
+                <td>RIWS21</td>
+            </tr>
+            <tr>
+                <td>30"</td>
+                <td>33 3/8" x 33 3/8"</td>
+                <td>31" x 31"</td>
+                <td>4"</td>
+                <td>26</td>
+                <td>0.75</td>
+                <td>IWS24</td>
+                <td>RIWS24</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <div class="notes">
+        <p>Shutters must be mounted with a minimum of 6" from fan blades. Best performance is achieved with a distance of one-half the blade diameter between the blades and the shutter. Shutters mounted directly to housing will slightly reduce fan performance and increase motor load.</p>
+    </div>
+</div>
+
+<script>
+    // Add functionality to the download button
+    document.querySelector('.download-btn').addEventListener('click', () => {
+        window.open('https://yourwebsite.com/files/product-details.pdf', '_blank');
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Locations - SunShield</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color:#007bff;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f5f5f5;
+            align-items: center;
+        }
+        .nav-bar a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 20px;
+        }
+        .nav-bar a:hover {
+            color: #004d40;
+        }
+        .contact-section {
+            padding: 20px;
+            background-color: #e0f2f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-info {
+            max-width: 50%;
+        }
+        .contact-info h2 {
+            color: #004d40;
+        }
+        .contact-info button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .contact-image img {
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        .locations-section {
+            background-color: #e0f2f1;
+            color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .locations-section img {
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        .features-section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #f5f5f5;
+        }
+        .feature {
+            text-align: center;
+            max-width: 30%;
+        }
+        .feature img {
+            max-width: 50px;
+            margin-bottom: 10px;
+        }
+        /* Footer styling */
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .footer-top div {
+            text-align: center;
+        }
+        .footer-bottom {
+            padding: 15px 0;
+            background-color: #007bff;
+            font-size: 0.9em;
+        }
+        .footer-bottom .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .footer-bottom .links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer-bottom p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container" style="background-color: rgb(255, 255, 255);">
+            <div class="logo">
+             <a href="/Index.html"><img src="/SunshieldLogo copy.png" alt="SunShield Best Logo"></a>   
+
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Industries</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#">News & Resources</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            
+            <div class="right-section">
+                <a href="/Accountlogin.html" class="button-link">Account Login</a> 
+                <a href="/RequestQuota/requestquota.html" class="button-link">Request A Quote</a>
+                
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>SunShield believes there is a better way to optimize today's supply chains with reusable packaging products and services. SunShield offers the resources, experience, and insight to support you every step of the way.</p>
+            <button >Request Info</button>
+            <button>Request a Quote</button>
+            <p><strong>Give us a call</strong><br>800.890.7292</p>
+        </div>
+        <div class="contact-image">
+            <img src="demo-graphics-01.webp" alt="Contact Representative">
+        </div>
+    </div>
+
+    <!-- Locations Section -->
+    <div class="locations-section">
+        <img src="demo-graphics-01.webp" alt="SunShield Location Sign">
+        <div>
+            <h2>Locations</h2>
+            <p>Check out our locations by clicking the button below.</p>
+            <button>View Locations</button>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="feature">
+            <img src="demo-graphics-01.webp" alt="Innovative Icon">
+            <h3>Innovative Products</h3>
+            <p>SunShield moves more than product. SunShield moves the industry forward to keep your supply chain evolving.</p>
+        </div>
+        <div class="feature">
+            <img src="demo-graphics-01.webp" alt="Solutions Icon">
+            <h3>Solutions for Any Supply Chain</h3>
+            <p>From manufacturing to retail and beyond, SunShield offers the broadest range of reusable packaging products.</p>
+        </div>
+        <div class="feature">
+            <img src="demo-graphics-01.webp" alt="Ocean Icon">
+            <h3>Working with the Ocean in Mind</h3>
+            <p>Thanks to our repurposed plastics, SunShield diverts nearly 1 million pounds of single-use plastic from oceans.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <p>Want to get in touch with us?</p>
+                <button style="background-color: #00695c; color: white; padding: 10px 15px; border: none; cursor: pointer;">Contact Us →</button>
+            </div>
+            <div>
+                <p>Contact us</p>
+                <p>800.890.7292</p>
+            </div>
+            <div>
+                <p>Connect with Us</p>
+                <div>
+                    <a href="#" style="color: #fff; margin-right: 10px;">Facebook</a>
+                    <a href="#" style="color: #fff; margin-right: 10px;">Twitter</a>
+                    <a href="#" style="color: #fff; margin-right: 10px;">LinkedIn</a>
+                    <a href="#" style="color: #fff; margin-right: 10px;">YouTube</a>
+                    <a href="#" style="color: #fff;">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="links">
+                <a href="#">Trademarks</a>
+                <a href="#">Patents</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">DMCA Policy</a>
+                <a href="#">Commercial Terms & Conditions</a>
+                <a href="#">Supplier Info</a>
+                <a href="#">Image Library</a>
+                <a href="#">Privacy Settings</a>
+            </div>
+            <p>© Copyright 2024 SunShield Corporation</p>
+        </div>
+    </footer>
+
+</body>
+</html>
